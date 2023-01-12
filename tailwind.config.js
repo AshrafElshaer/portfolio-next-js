@@ -24,7 +24,7 @@ module.exports = {
           dark: "#fafafa",
           lgith: "#1d1d1d",
         },
-        darkBg: "#1c1c1e",
+        darkBg: "#1d1d1d",
         gray: {
           light: "#f5f5f5",
           DEFAULT: "#ebebeb",

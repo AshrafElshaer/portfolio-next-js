@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Navbar } from "../components";
+import { Card, Navbar } from "../components";
 
 export default function Home() {
   return (
@@ -11,8 +11,15 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='bg-gray-light dark:bg-darkBg text-theme-lgith dark:text-theme-dark transition-all duration-300'>
-        <Navbar />
+      <main className='container'>
+        <Card>
+          <h1 className=''>Home</h1>
+          <h1 className=''>Home</h1>
+          <h1 className=''>Home</h1>
+          <h1 className=''>Home</h1>
+          <h1 className=''>Home</h1>
+          <h1 className=''>Home</h1>
+        </Card>
       </main>
     </>
   );

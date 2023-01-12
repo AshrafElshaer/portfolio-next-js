@@ -1,3 +1,4 @@
+"use-client";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
@@ -26,7 +27,7 @@ const listItem = {
 const Navbar = () => {
   const { route } = useRouter();
   return (
-    <nav className='container flex justify-between items-center py-16 text-sm'>
+    <nav className='container flex justify-between items-center pb-16 pt-12 text-sm'>
       <ToggleTheme />
 
       <motion.ul
@@ -37,19 +38,27 @@ const Navbar = () => {
         <motion.li variants={listItem}>
           <Link
             href='/'
-            className={` py-2 px-6 rounded-full ${
+            className={` py-2 px-6 rounded-full transition-all duration-200 ${
               route === "/" ? " bg-gray-light dark:bg-darkBg" : ""
             }`}>
             Home
           </Link>
         </motion.li>
         <motion.li variants={listItem}>
-          <Link href='/' className=' py-2 px-6 rounded-full'>
+          <Link
+            href='/projects'
+            className={` py-2 px-6 rounded-full transition-all duration-200 ${
+              route === "/projects" ? " bg-gray-light dark:bg-darkBg" : ""
+            }`}>
             Projects
           </Link>
         </motion.li>
         <motion.li variants={listItem}>
-          <Link href='/' className=' py-2 px-6 rounded-full'>
+          <Link
+            href='/media'
+            className={` py-2 px-6 rounded-full transition-all duration-200 ${
+              route === "/media" ? " bg-gray-light dark:bg-darkBg" : ""
+            }`}>
             Media
           </Link>
         </motion.li>
@@ -58,7 +67,8 @@ const Navbar = () => {
         buttonType='primary'
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.7 }}>
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.4 }}>
         <a href='mailto:ashrafelshaer98@icloud.com'>Contact</a>
       </Button>
     </nav>
