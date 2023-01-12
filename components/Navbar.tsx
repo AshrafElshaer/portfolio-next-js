@@ -26,14 +26,14 @@ const listItem = {
 const Navbar = () => {
   const { route } = useRouter();
   return (
-    <nav className='container flex justify-between items-center py-16'>
+    <nav className='container flex justify-between items-center py-16 text-sm'>
       <ToggleTheme />
 
       <motion.ul
         variants={container}
         initial='hidden'
         animate='show'
-        className='absolute top-24 left-1/2 -translate-x-1/2 sm:relative sm:top-0  sm:left-0 sm:translate-x-0  sm:w-auto flex gap-3 justify-center items-center py-3 px-2 rounded-full bg-gray dark:bg-black text-sm'>
+        className='absolute top-24 left-1/2 -translate-x-1/2 sm:relative sm:top-0  sm:left-0 sm:translate-x-0  sm:w-auto flex gap-3 justify-center items-center py-3 px-2 rounded-full bg-gray dark:bg-black '>
         <motion.li variants={listItem}>
           <Link
             href='/'
@@ -54,7 +54,11 @@ const Navbar = () => {
           </Link>
         </motion.li>
       </motion.ul>
-      <Button>
+      <Button
+        buttonType='primary'
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, delay: 0.7 }}>
         <a href='mailto:ashrafelshaer98@icloud.com'>Contact</a>
       </Button>
     </nav>

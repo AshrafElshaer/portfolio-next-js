@@ -47,7 +47,7 @@ const ToggleTheme = () => {
         />
         <div
           onClick={toggleDarkMode}
-          className='w-14 h-7 bg-gray peer-focus:outline-none  rounded-full peer  peer-checked:after:translate-x-full  after:content-[""] after:absolute after:top-0.5 after:left-[4px] after:bg-gray-light peer-checked:after:bg-gray-dark  after:rounded-full after:h-6 after:w-6 after:z-0 after:transition-all dark:border-gray-600 peer-checked:bg-black flex items-center justify-start peer-checked:justify-end px-2 '>
+          className='w-14 h-7 bg-gray peer-focus:outline-none  rounded-full peer  peer-checked:after:translate-x-full  after:content-[""] after:absolute after:top-0.5 after:left-[4px] after:bg-gray-light peer-checked:after:bg-gray-dark  after:rounded-full after:h-6 after:w-6 after:z-0 after:transition-all dark:border-gray-600 peer-checked:bg-black flex items-center justify-start peer-checked:justify-end px-2 transition-all duration-200'>
           {isDarkMode ? (
             <BsSunFill className='text-yellow-500 z-20 ' />
           ) : (
