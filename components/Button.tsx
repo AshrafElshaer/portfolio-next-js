@@ -14,14 +14,14 @@ type TButtonStyles = {
 };
 const buttonTypes: TButtonStyles = {
   primary: "bg-gradient",
-  secondary: "bg-none",
+  secondary: "bg-gray dark:bg-black",
 };
 
 const Button = ({ children, buttonType, ...motionProps }: Props) => {
   return (
     <motion.button
       {...motionProps}
-      className={` py-2 px-[2px] rounded-full hover:scale-105  ${buttonTypes[buttonType]}`}>
+      className={` text-sm pt-[10px] pb-[11px] px-[4px] rounded-full hover:scale-105 transition-all duration-300  ${buttonTypes[buttonType]}`}>
       <span className='bg-gray dark:bg-black py-2 px-4 rounded-full 5'>
         {children}
       </span>

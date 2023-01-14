@@ -67,8 +67,7 @@ const Navbar = () => {
         buttonType='primary'
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.4 }}>
+        transition={{ duration: 0.2 }}>
         <a href='mailto:ashrafelshaer98@icloud.com'>Contact</a>
       </Button>
     </nav>

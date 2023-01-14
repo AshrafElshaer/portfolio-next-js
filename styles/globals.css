@@ -8,6 +8,13 @@
   }
 
   .container {
-    @apply px-4 w-full max-w-6xl mx-auto;
+    @apply p-8 w-full max-w-6xl mx-auto;
   }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display, serif;";
+  font-weight: bold;
 }
