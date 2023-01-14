@@ -10,7 +10,7 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.4,
+      duration: 1.2,
       staggerChildren: 0.2,
       delayChildren: 0.2,
     },
@@ -34,7 +34,7 @@ const Navbar = () => {
         variants={container}
         initial='hidden'
         animate='show'
-        className='absolute top-24 left-1/2 -translate-x-1/2 sm:relative sm:top-0  sm:left-0 sm:translate-x-0  sm:w-auto flex gap-3 justify-center items-center py-3 px-2 rounded-full bg-gray dark:bg-black '>
+        className='absolute top-24 left-1/2 -translate-x-1/2 sm:relative sm:top-0  sm:left-0 sm:translate-x-0  sm:w-auto flex gap-3 justify-center items-center py-3 px-2 rounded-full bg-gray dark:bg-black overflow-hidden '>
         <motion.li variants={listItem}>
           <Link
             href='/'

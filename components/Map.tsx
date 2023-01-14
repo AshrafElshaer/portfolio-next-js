@@ -9,7 +9,7 @@ const Map = (props: Props) => {
       initialViewState={{
         longitude: -96.615021,
         latitude: 33.19796,
-        zoom: 8,
+        zoom: 7.15,
       }}
       style={{ width: "120%", height: "110%" }}
       mapStyle='mapbox://styles/mapbox/dark-v11'>
