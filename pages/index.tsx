@@ -4,6 +4,8 @@ import { Button, Card, Map } from "../components";
 import "mapbox-gl/dist/mapbox-gl.css";
 import useTheme from "../hooks/useTheme";
 import { useEffect } from "react";
+import {technologies } from '../constans'
+import {TechPreview} from '../components'
 
 // create a react context api for theme
 
@@ -37,7 +39,10 @@ export default function Home() {
           <Map />
         </Card>
         <Card styles=''>
-          <h2>Techs & Languages</h2>
+          <h2 className='text-center text-2xl tracking-wide'>Techs & Languages</h2>
+          <div className="flex gap-4 flex-wrap my-6 justify-around">
+            {technologies.map(tech => <TechPreview key={tech.name} tech={tech} />)}
+          </div>
         </Card>
       </main>
     </>
