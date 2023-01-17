@@ -39,7 +39,7 @@ export default function Home() {
         <Card styles='py-0 px-0'>
           <Map />
         </Card>
-        <Card styles='md:row-span-2 lg:row-span-1 lg:col-span-2'>
+        <Card styles='md:row-span-2 lg:row-span-1 lg:col-start-2 lg:col-end-4'>
           <h2 className='text-center text-2xl tracking-wide'>
             Techs & Languages
           </h2>
@@ -49,7 +49,7 @@ export default function Home() {
             ))}
           </div>
         </Card>
-        <div className='grid grid-cols-2 grid-rows-2 gap-4 lg:col-start-3 lg:col-end-4'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-4 lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3'>
           <SocialMediaCard
             socialMedia={socialMediaLinks.gitHub}
             backGround='bg-gray-dark'

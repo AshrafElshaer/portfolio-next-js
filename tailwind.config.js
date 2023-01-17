@@ -16,9 +16,9 @@ module.exports = {
     },
     extend: {
       gridTemplateRows: {
-        homeMobile : "325px repeat(3, minmax(100px ,1fr))",
-        homeTablet: "repeat(3, 250px)",
-        homeDesktop : "250px 361px",
+        homeMobile: "325px repeat(3, minmax(100px ,1fr))",
+        homeTablet: "repeat(3, 285px)",
+        homeDesktop: "250px 361px",
       },
       backgroundImage: {
         gradient: "linear-gradient(45deg, #e36577, #f6edb2);",
