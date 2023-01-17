@@ -4,14 +4,15 @@ import { Button, Card, Map } from "../components";
 import "mapbox-gl/dist/mapbox-gl.css";
 import useTheme from "../hooks/useTheme";
 import { useEffect } from "react";
-import {technologies } from '../constans'
-import {TechPreview} from '../components'
+import { socialMediaLinks, technologies } from "../constans";
+import { TechPreview } from "../components";
+import SocialMediaCard from "../components/SocialMediaCard";
 
 // create a react context api for theme
 
 export default function Home() {
   const { isDarkMode } = useTheme();
-  
+
   return (
     <>
       <Head>
@@ -20,7 +21,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/memoji.png' />
       </Head>
-      <main className='container pt-4 grid grid-rows-3 gap-4'>
+      <main className='container pt-4 grid grid-rows-6 gap-4'>
         <Card styles='text-left sm:text-center flex flex-col gap-4'>
           <h1 className=' text-4xl text-gradient '>Ashraf Elshaer</h1>
           <p> Self-taught front-end developer in The United States</p>
@@ -39,11 +40,27 @@ export default function Home() {
           <Map />
         </Card>
         <Card styles=''>
-          <h2 className='text-center text-2xl tracking-wide'>Techs & Languages</h2>
-          <div className="flex gap-4 flex-wrap my-6 justify-around">
-            {technologies.map(tech => <TechPreview key={tech.name} tech={tech} />)}
+          <h2 className='text-center text-2xl tracking-wide'>
+            Techs & Languages
+          </h2>
+          <div className='grid grid-cols-3 gap-8 my-6 '>
+            {technologies.map((tech) => (
+              <TechPreview key={tech.name} tech={tech} />
+            ))}
           </div>
         </Card>
+        <SocialMediaCard
+          socialMedia={socialMediaLinks.gitHub}
+          backGround='bg-gray-dark'
+        />
+        <SocialMediaCard
+          socialMedia={socialMediaLinks.linkedIn}
+          backGround='bg-[#0072b1]'
+        />
+        <SocialMediaCard
+          socialMedia={socialMediaLinks.instagram}
+          backGround='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
+        />
       </main>
     </>
   );

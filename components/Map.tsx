@@ -28,7 +28,8 @@ const Map = ({}: Props) => {
       }}
       style={{ width: "120%", height: "110%" }}
       mapStyle={mapStyles}
-      minZoom={4}>
+      minZoom={4}
+      maxZoom={8}>
       <Marker latitude={33.162703} longitude={-96.644325}>
         <Image src='/memoji.png' alt='Memoji Avatar' width={100} height={150} />
       </Marker>

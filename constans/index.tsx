@@ -5,10 +5,9 @@ import {
   SiMongodb,
   SiExpress,
   SiRedux,
-  SiNextdotjs,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 
 export const technologies = [
   {
@@ -52,3 +51,18 @@ export const technologies = [
     color: "text-theme-light dark:text-theme-dark",
   },
 ];
+
+export const socialMediaLinks = {
+  gitHub: {
+    path: "https://github.com/AshrafElshaer",
+    icon: <AiFillGithub size='8rem' color='white' />,
+  },
+  linkedIn: {
+    path: "https://www.linkedin.com/in/ashrafelshaer/",
+    icon: <AiFillLinkedin size='8rem' color='white' />,
+  },
+  instagram: {
+    path: "https://www.instagram.com/ashraf.elsha3er/",
+    icon: <AiOutlineInstagram size='8rem' color='white' />,
+  },
+};
