@@ -7,21 +7,23 @@ import { BsArrowRightShort } from "react-icons/bs";
 type Props = {
   socialMedia: { path: string; icon: ReactNode };
   backGround?: string;
+  styles?:string;
 };
 
 const SocialMediaCard = ({
   socialMedia: { path, icon },
   backGround,
+  styles
 }: Props) => {
   return (
-    <Card styles={`px-0 py-0  bg-gray-dark `} backGround={backGround}>
+    <Card styles={`px-0 py-0 ${styles}`} backGround={backGround} >
       <Link
         href={path}
         className=' relative w-full h-full grid place-content-center '
         target='_blank'>
         {icon}
         <span>
-          <BsArrowRightShort size='2rem' color='white' className="absolute bottom-8 right-8 bg-black rounded-full hover:ring-8 hover:ring-white/70 transition-all duration-[400ms]" />
+          <BsArrowRightShort size='2rem' color='white' className="absolute bottom-4 right-4 bg-black rounded-full hover:ring-[6px] hover:ring-white/70 transition-all duration-[400ms]" />
         </span>
       </Link>
     </Card>

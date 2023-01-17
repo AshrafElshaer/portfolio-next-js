@@ -55,14 +55,14 @@ export const technologies = [
 export const socialMediaLinks = {
   gitHub: {
     path: "https://github.com/AshrafElshaer",
-    icon: <AiFillGithub size='8rem' color='white' />,
+    icon: <AiFillGithub size='5rem' color='white' />,
   },
   linkedIn: {
     path: "https://www.linkedin.com/in/ashrafelshaer/",
-    icon: <AiFillLinkedin size='8rem' color='white' />,
+    icon: <AiFillLinkedin size='5rem' color='white' />,
   },
   instagram: {
     path: "https://www.instagram.com/ashraf.elsha3er/",
-    icon: <AiOutlineInstagram size='8rem' color='white' />,
+    icon: <AiOutlineInstagram size='5rem' color='white' />,
   },
 };

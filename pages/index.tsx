@@ -21,7 +21,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/memoji.png' />
       </Head>
-      <main className='container pt-4 grid grid-rows-6 gap-4'>
+      <main className='container pt-4 grid grid-rows-4 gap-4'>
         <Card styles='text-left sm:text-center flex flex-col gap-4'>
           <h1 className=' text-4xl text-gradient '>Ashraf Elshaer</h1>
           <p> Self-taught front-end developer in The United States</p>
@@ -49,18 +49,22 @@ export default function Home() {
             ))}
           </div>
         </Card>
-        <SocialMediaCard
-          socialMedia={socialMediaLinks.gitHub}
-          backGround='bg-gray-dark'
-        />
-        <SocialMediaCard
-          socialMedia={socialMediaLinks.linkedIn}
-          backGround='bg-[#0072b1]'
-        />
-        <SocialMediaCard
-          socialMedia={socialMediaLinks.instagram}
-          backGround='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
-        />
+        <div className="grid grid-cols-2 grid-rows-2 gap-4">
+          <SocialMediaCard
+            socialMedia={socialMediaLinks.gitHub}
+            backGround='bg-gray-dark'
+            styles="col-start-1 col-end-3"
+            
+          />
+          <SocialMediaCard
+            socialMedia={socialMediaLinks.linkedIn}
+            backGround='bg-[#0072b1]'
+          />
+          <SocialMediaCard
+            socialMedia={socialMediaLinks.instagram}
+            backGround='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
+          />
+        </div>
       </main>
     </>
   );
