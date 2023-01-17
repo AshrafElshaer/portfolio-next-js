@@ -26,7 +26,7 @@ const Map = ({}: Props) => {
         latitude: 33.19796,
         zoom: 7.15,
       }}
-      style={{ width: "120%", height: "110%" }}
+      style={{ width: "120%", height: "115%" }}
       mapStyle={mapStyles}
       minZoom={4}
       maxZoom={8}>

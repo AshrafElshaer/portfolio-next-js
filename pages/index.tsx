@@ -21,15 +21,15 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/memoji.png' />
       </Head>
-      <main className='container pt-4 grid grid-rows-4 gap-4'>
-        <Card styles='text-left sm:text-center flex flex-col gap-4'>
+      <main className='container py-4 grid grid-rows-homeMobile gap-4 md:grid-cols-2 md:grid-rows-homeTablet lg:grid-cols-3 lg:grid-rows-homeDesktop'>
+        <Card styles='text-left md:text-center flex flex-col gap-4 md:col-start-1 md:col-end-3 '>
           <h1 className=' text-4xl text-gradient '>Ashraf Elshaer</h1>
           <p> Self-taught front-end developer in The United States</p>
           <p>
             Hey! I'm Ash, and my goal is to work at a company where I can
-            deliver business value while levelling up my skills as a developer.
+            deliver business value while leveling up my skills as a developer.
           </p>
-          <div className='flex justify-center items-center gap-4 mt-6'>
+          <div className='flex justify-center items-center gap-4 mt-auto'>
             <Button buttonType='primary'>
               <Link href='/projects'>See My Work</Link>
             </Button>
@@ -39,22 +39,21 @@ export default function Home() {
         <Card styles='py-0 px-0'>
           <Map />
         </Card>
-        <Card styles=''>
+        <Card styles='md:row-span-2 lg:row-span-1 lg:col-span-2'>
           <h2 className='text-center text-2xl tracking-wide'>
             Techs & Languages
           </h2>
-          <div className='grid grid-cols-3 gap-8 my-6 '>
+          <div className='grid grid-cols-3 gap-8 my-6 lg:flex lg:flex-wrap  '>
             {technologies.map((tech) => (
               <TechPreview key={tech.name} tech={tech} />
             ))}
           </div>
         </Card>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4">
+        <div className='grid grid-cols-2 grid-rows-2 gap-4 lg:col-start-3 lg:col-end-4'>
           <SocialMediaCard
             socialMedia={socialMediaLinks.gitHub}
             backGround='bg-gray-dark'
-            styles="col-start-1 col-end-3"
-            
+            styles='col-start-1 col-end-3'
           />
           <SocialMediaCard
             socialMedia={socialMediaLinks.linkedIn}

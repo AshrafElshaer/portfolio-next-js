@@ -12,7 +12,7 @@ type Props = {
 
 const TechPreview = ({tech}: Props) => {
   return (
-    <div className="flex flex-col gap-2 items-center">
+    <div className="flex flex-col gap-2 items-center min-w-[5rem]">
       <div className={tech.color}>
        {tech.icon}
       </div>

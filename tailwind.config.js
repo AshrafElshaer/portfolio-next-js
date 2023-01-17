@@ -15,6 +15,11 @@ module.exports = {
       "2xl": "1536px",
     },
     extend: {
+      gridTemplateRows: {
+        homeMobile : "325px repeat(3, minmax(100px ,1fr))",
+        homeTablet: "repeat(3, 250px)",
+        homeDesktop : "250px 361px",
+      },
       backgroundImage: {
         gradient: "linear-gradient(45deg, #e36577, #f6edb2);",
       },
