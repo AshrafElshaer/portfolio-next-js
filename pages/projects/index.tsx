@@ -1,9 +1,14 @@
-import React from "react";
+import { HEAD, Main, Card } from "../../components";
 
-type Props = {};
-
-const Projects = (props: Props) => {
-  return <div>Projects</div>;
+const Projects = () => {
+  return (
+    <>
+      <HEAD path='Projects' description='Latest Projects' />
+      <Main styles=''>
+        <Card>card</Card>
+      </Main>
+    </>
+  );
 };
 
 export default Projects;

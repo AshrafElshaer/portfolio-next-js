@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react";
-import Image from "next/image";
+import  { ReactNode } from "react";
 import Link from "next/link";
 import Card from "./Card";
 import { BsArrowRightShort } from "react-icons/bs";

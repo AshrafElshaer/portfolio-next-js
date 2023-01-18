@@ -1,26 +1,16 @@
+import "mapbox-gl/dist/mapbox-gl.css";
 import Head from "next/head";
 import Link from "next/link";
-import { Button, Card, Map } from "../components";
-import "mapbox-gl/dist/mapbox-gl.css";
 import { socialMediaLinks, technologies } from "../constans";
-import { TechPreview } from "../components";
-import SocialMediaCard from "../components/SocialMediaCard";
-import { motion, AnimatePresence } from "framer-motion";
-
-// create a react context api for theme
-
-const containerVariant = {
-  hidden: {
-    opacity: 0,
-  },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 1,
-    },
-  },
-};
+import {
+  HEAD,
+  Main,
+  TechPreview,
+  SocialMediaCard,
+  Button,
+  Card,
+  Map,
+} from "../components";
 
 const cardVariant = {
   hidden: {
@@ -40,17 +30,9 @@ const cardVariant = {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Ashraf Elshaer</title>
-        <meta name='description' content='Front End Wrb Developer' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/memoji.png' />
-      </Head>
-      <motion.main
-        variants={containerVariant}
-        initial='hidden'
-        animate='show'
-        className='container py-4 grid grid-rows-homeMobile gap-4 md:grid-cols-2 md:grid-rows-homeTablet lg:grid-cols-3 lg:grid-rows-homeDesktop overflow-y-hidden'>
+      <HEAD description='Front End Wrb Developer' />
+
+      <Main styles='grid grid-rows-homeMobile gap-4 md:grid-cols-2 md:grid-rows-homeTablet lg:grid-cols-3 lg:grid-rows-homeDesktop '>
         <Card
           variants={cardVariant}
           styles='text-left md:text-center flex flex-col gap-4 md:col-start-1 md:col-end-3 '>
@@ -100,7 +82,7 @@ export default function Home() {
             variants={cardVariant}
           />
         </div>
-      </motion.main>
+      </Main>
     </>
   );
 }

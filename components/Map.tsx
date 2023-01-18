@@ -2,11 +2,8 @@ import ReactMapGl, { Marker } from "react-map-gl";
 import Image from "next/image";
 import useTheme from "../hooks/useTheme";
 import { useEffect, useState } from "react";
-type Props = {
-  // isDarkMode: boolean;
-};
 
-const Map = ({}: Props) => {
+const Map = () => {
   const [mapStyles, setMapStyles] = useState<string>("");
   const { isDarkMode } = useTheme();
 

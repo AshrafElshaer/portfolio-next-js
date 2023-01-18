@@ -3,7 +3,7 @@ import { motion, MotionProps } from "framer-motion";
 
 type Props = {
   children: ReactNode;
-  styles: string;
+  styles?: string;
   backGround?: string;
 } & MotionProps;
 

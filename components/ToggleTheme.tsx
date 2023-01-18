@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useEffect, useState } from "react";
+import { MouseEventHandler } from "react";
 import { BsSunFill } from "react-icons/bs";
 import { MdDarkMode } from "react-icons/md";
 import { motion } from "framer-motion";
