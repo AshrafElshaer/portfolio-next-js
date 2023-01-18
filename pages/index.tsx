@@ -55,7 +55,7 @@ export default function Home() {
           styles='md:row-span-2 lg:row-span-1 lg:col-start-2 lg:col-end-4'
           variants={cardVariant}>
           <h2 className='text-center text-2xl'>Techs & Languages</h2>
-          <div className='grid grid-cols-3 gap-8 my-6 lg:flex lg:flex-wrap  '>
+          <div className='grid grid-cols-3 gap-8 my-6 lg:flex lg:flex-wrap lg:items-center  '>
             {technologies.map((tech) => (
               <TechPreview key={tech.name} tech={tech} />
             ))}

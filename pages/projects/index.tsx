@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HEAD, Main, Card, Button, ProjectPreview } from "../../components";
+import { projects } from "../../constans";
 
 const Projects = () => {
   return (
@@ -8,12 +9,10 @@ const Projects = () => {
       <HEAD path='Projects' description='Latest Projects' />
       <Main styles=''>
         <div className='flex flex-wrap justify-center gap-4'>
-          <ProjectPreview />
-          <ProjectPreview />
-          <ProjectPreview />
-          <ProjectPreview />
-          <ProjectPreview />
-         
+          {projects.map((project, idx) => (
+            <ProjectPreview key={idx} project={project} />
+          ))}
+        
         </div>
       </Main>
     </>

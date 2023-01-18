@@ -12,45 +12,82 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import { ReactNode } from "react";
+
+function createIcon(icon: string, size: string): ReactNode {
+  switch (icon) {
+    case "typescript":
+      return <SiTypescript size={size} color='#007acc' />;
+      break;
+    case "react":
+      return <FaReact color='#61dbfb' size={size} />;
+      break;
+    case "redux":
+      return <SiRedux color='#764abc' size={size} />;
+      break;
+    case "tailwind":
+      return <SiTailwindcss color='#3b82f6' size={size} />;
+      break;
+    case "node":
+      return <SiNodedotjs color='#68A063' size={size} />;
+      break;
+    case "express":
+      return <SiExpress size={size} />;
+      break;
+    case "mongoDB":
+      return <SiMongodb color='#3FA037' size={size} />;
+      break;
+    case "github":
+      return <AiFillGithub size={size} />;
+      break;
+    case "linkedIn":
+      return <AiFillLinkedin color='white' size={size} />;
+      break;
+    case "instagram":
+      return <AiOutlineInstagram color='white' size={size} />;
+      break;
+
+    default:
+      return;
+  }
+}
+
+const React = (size: string): ReactNode => (
+  <FaReact color='#61dbfb' size={size} />
+);
 
 export const technologies = [
   {
     name: "TypeScript",
-    icon: (
-      <SiTypescript
-        size='2rem'
-        color='
-        #007acc'
-      />
-    ),
+    icon: createIcon("typescript", "2rem"),
   },
   {
-    icon: <FaReact color='#61dbfb' size='2rem' />,
+    icon: createIcon("react", "2rem"),
     name: "React Js",
   },
   {
-    icon: <SiRedux color='#764abc' size='2rem' />,
+    icon: createIcon("redux", "2rem"),
     name: "Redux",
   },
   {
-    icon: <SiTailwindcss color='#3b82f6' size='2rem' />,
+    icon: createIcon("tailwind", "2rem"),
     name: "Tailwind ",
   },
   {
-    icon: <SiNodedotjs size='2rem' color='#68A063' />,
+    icon: createIcon("node", "2rem"),
     name: "Node Js ",
   },
   {
-    icon: <SiExpress size='2rem' />,
+    icon: createIcon("express", "2rem"),
     name: "Express Js ",
     color: "text-theme-light dark:text-theme-dark",
   },
   {
-    icon: <SiMongodb size='2rem' color='#3FA037' />,
+    icon: createIcon("mongoDB", "2rem"),
     name: "MongoDB ",
   },
   {
-    icon: <AiFillGithub size='2rem' />,
+    icon: createIcon("github", "2rem"),
     name: "GitHub ",
     color: "text-theme-light dark:text-theme-dark",
   },
@@ -59,15 +96,15 @@ export const technologies = [
 export const socialMediaLinks = {
   gitHub: {
     path: "https://github.com/AshrafElshaer",
-    icon: <AiFillGithub size='5rem' color='white' />,
+    icon: createIcon("github", "5rem"),
   },
   linkedIn: {
     path: "https://www.linkedin.com/in/ashrafelshaer/",
-    icon: <AiFillLinkedin size='5rem' color='white' />,
+    icon: createIcon("linkedIn", "5rem"),
   },
   instagram: {
     path: "https://www.instagram.com/ashraf.elsha3er/",
-    icon: <AiOutlineInstagram size='5rem' color='white' />,
+    icon: createIcon("instagram", "5rem"),
   },
 };
 
@@ -76,10 +113,18 @@ export const projects = [
     name: "AudioPhile",
     subTitle: "Web e-commerce ",
     techStack: [
-      <FaReact color='#61dbfb' size='2rem' />,
-      <SiRedux color='#764abc' size='2rem' />,
+      createIcon("react", "2rem"),
+      createIcon("redux", "2rem"),
+      createIcon("tailwind", "2rem"),
     ],
-    gallery: ["imgSrc"],
+    gallery: [
+    "/public/audiophile-1.png",
+    // "/public/audiophile-2.png",
+    // "/public/audiophile-3.png",
+    // "/public/audiophile-4.png",
+    // "/public/audiophile-5.png",
+    // "/public/audiophile-6.png",
+  ],
     livePath: "live preview link",
     githubPath: "github coe repo",
   },
