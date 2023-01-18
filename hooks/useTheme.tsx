@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useTheme = () => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>();
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
   const toggleDarkMode = (): void => {
     const body = document.querySelector("body");
