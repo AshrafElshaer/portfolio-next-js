@@ -42,11 +42,10 @@ export default function Home() {
             Hey! I'm Ash, and my goal is to work at a company where I can
             deliver business value while leveling up my skills as a developer.
           </p>
-          <div className='flex justify-center items-center gap-4 mt-auto'>
+          <div className='flex justify-center items-center mt-auto'>
             <Button buttonType='primary'>
               <Link href='/projects'>See My Work</Link>
             </Button>
-            <Button buttonType='secondary'>Learn More</Button>
           </div>
         </Card>
         <Card styles='py-0 px-0' variants={cardVariant}>
@@ -55,9 +54,7 @@ export default function Home() {
         <Card
           styles='md:row-span-2 lg:row-span-1 lg:col-start-2 lg:col-end-4'
           variants={cardVariant}>
-          <h2 className='text-center text-2xl tracking-wide'>
-            Techs & Languages
-          </h2>
+          <h2 className='text-center text-2xl'>Techs & Languages</h2>
           <div className='grid grid-cols-3 gap-8 my-6 lg:flex lg:flex-wrap  '>
             {technologies.map((tech) => (
               <TechPreview key={tech.name} tech={tech} />

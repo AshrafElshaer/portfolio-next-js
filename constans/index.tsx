@@ -7,7 +7,11 @@ import {
   SiRedux,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 
 export const technologies = [
   {
@@ -66,3 +70,17 @@ export const socialMediaLinks = {
     icon: <AiOutlineInstagram size='5rem' color='white' />,
   },
 };
+
+export const projects = [
+  {
+    name: "AudioPhile",
+    subTitle: "Web e-commerce ",
+    techStack: [
+      <FaReact color='#61dbfb' size='2rem' />,
+      <SiRedux color='#764abc' size='2rem' />,
+    ],
+    gallery: ["imgSrc"],
+    livePath: "live preview link",
+    githubPath: "github coe repo",
+  },
+];
