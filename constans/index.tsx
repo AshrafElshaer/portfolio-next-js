@@ -167,24 +167,5 @@ export const projects = [
     livePath: "https://curious-meringue-78ffd1.netlify.app/",
     githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
   },
-  {
-    id: 3,
-    name: "Invoce App",
-    subTitle: "Invoicing web app ",
-    techStack: [
-      createIcon("react", "1.5rem"),
-      createIcon("redux", "1.5rem"),
-      createIcon("firebase", "1.5rem"),
-    ],
-    gallery: [
-      "/audiophile-1.png",
-      // "/public/audiophile-2.png",
-      // "/public/audiophile-3.png",
-      // "/public/audiophile-4.png",
-      // "/public/audiophile-5.png",
-      // "/public/audiophile-6.png",
-    ],
-    livePath: "https://curious-meringue-78ffd1.netlify.app/",
-    githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
-  },
+
 ];

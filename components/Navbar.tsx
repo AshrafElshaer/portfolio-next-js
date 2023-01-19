@@ -52,15 +52,7 @@ const Navbar = () => {
             Projects
           </Link>
         </motion.li>
-        <motion.li variants={listItem}>
-          <Link
-            href='/media'
-            className={` py-2 px-6 rounded-full transition-all duration-200 ${
-              route === "/media" ? " bg-gray-light dark:bg-darkBg" : ""
-            }`}>
-            Media
-          </Link>
-        </motion.li>
+        
       </motion.ul>
       <Button
         buttonType='primary'

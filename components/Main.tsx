@@ -9,7 +9,6 @@ const containerVariant = {
     opacity: 1,
     transition: {
       staggerChildren: 0.2,
-
     },
   },
 };
@@ -24,7 +23,7 @@ function Main({ children, styles }: Props) {
       variants={containerVariant}
       initial='hidden'
       animate='show'
-      className={`container py-4 overflow-y-hidden min-h-[80.8vh] ${styles}`}>
+      className={`container py-4 overflow-y-hidden min-h-[calc(100vh-156px)] ${styles}`}>
       {children}
     </motion.main>
   );

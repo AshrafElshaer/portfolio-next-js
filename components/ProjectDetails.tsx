@@ -35,7 +35,7 @@ function ProjectDetails({ project }: Props) {
         </motion.div>
         <Card styles='text-center ' variants={cardVariant}>
           <h2 className='text-3xl text-gradient mb-2'>{project?.name}</h2>
-          <p className='text-xl'>{project?.subTitle}</p>
+          <p className='text-lg'>{project?.subTitle}</p>
         </Card>
         <div className='flex flex-col md:flex-row gap-8 '>
           <Card
