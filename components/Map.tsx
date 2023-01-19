@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 const Map = () => {
   const [mapStyles, setMapStyles] = useState<string>("");
   const { isDarkMode } = useTheme();
+  
 
   useEffect(() => {
     setMapStyles(
@@ -13,11 +14,12 @@ const Map = () => {
         ? "mapbox://styles/mapbox/dark-v11"
         : "mapbox://styles/mapbox/light-v11"
     );
+    
   }, [isDarkMode]);
 
   return (
     <ReactMapGl
-      mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
+      mapboxAccessToken="pk.eyJ1IjoiYWVsc2hhZXIiLCJhIjoiY2xkMnVhcTZiMGMxMjNvb3p1bjVlZjVlNiJ9.IFa8XlQ4ObyJguNPOnx4sg"
       initialViewState={{
         longitude: -96.615021,
         latitude: 33.19796,
