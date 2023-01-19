@@ -5,7 +5,7 @@ import { Card, Button, Carousel } from "../components";
 import { FaGreaterThan, FaLessThan } from "react-icons/fa";
 import { MotionProps } from "framer-motion";
 
-type Props = {
+export type Props = {
   project: {
     id: number;
     name: string;

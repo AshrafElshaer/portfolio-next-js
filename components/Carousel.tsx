@@ -32,12 +32,12 @@ function Carousel({ gallery, name }: Props) {
         />
       ))}
       <button
-        className='absolute top-1/2 -translate-y-1/2 right-1 z-20 bg-black/40 rounded-full text-white p-2'
+        className='absolute top-1/2 -translate-y-1/2 right-1 z-20 bg-black/40 rounded-full text-white p-2 text-xl'
         onClick={handleNext}>
         <FaGreaterThan size='0.75rem' />
       </button>
       <button
-        className='absolute top-1/2 -translate-y-1/2 left-1 z-20 bg-black/40 rounded-full text-white p-2'
+        className='absolute top-1/2 -translate-y-1/2 left-1 z-20 bg-black/40 rounded-full text-white p-2 text-xl'
         onClick={handlePrevious}>
         <FaLessThan size='0.75rem' />
       </button>
