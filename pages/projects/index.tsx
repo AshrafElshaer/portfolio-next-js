@@ -8,11 +8,10 @@ const Projects = () => {
     <>
       <HEAD path='Projects' description='Latest Projects' />
       <Main styles=''>
-        <div className='flex flex-wrap justify-center gap-4'>
+        <div className='grid grid-rows-fit md:grid-cols-2 lg:grid-cols-3 gap-4'>
           {projects.map((project, idx) => (
             <ProjectPreview key={idx} project={project} />
           ))}
-        
         </div>
       </Main>
     </>

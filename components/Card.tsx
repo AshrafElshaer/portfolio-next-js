@@ -12,7 +12,7 @@ const Card = ({ children, styles, backGround, ...mothioProps }: Props) => {
     <motion.div
       className={`${
         backGround ? backGround : "bg-white dark:bg-gray-dark"
-      }  rounded-2xl overflow-hidden ${styles} p-6`}
+      }  rounded-2xl overflow-hidden shadow-md ${styles} p-6`}
       {...mothioProps}>
       {children}
     </motion.div>

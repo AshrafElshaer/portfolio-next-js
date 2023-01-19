@@ -5,6 +5,7 @@ import {
   SiMongodb,
   SiExpress,
   SiRedux,
+  SiFirebase,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import {
@@ -39,6 +40,9 @@ function createIcon(icon: string, size: string): ReactNode {
       break;
     case "github":
       return <AiFillGithub size={size} />;
+      break;
+    case "firebase":
+      return <SiFirebase color='#FFA611' size={size} />;
       break;
     case "linkedIn":
       return <AiFillLinkedin color='white' size={size} />;
@@ -111,21 +115,61 @@ export const socialMediaLinks = {
 export const projects = [
   {
     name: "AudioPhile",
-    subTitle: "Web e-commerce ",
+    subTitle: "E-commerce ",
     techStack: [
-      createIcon("react", "2rem"),
-      createIcon("redux", "2rem"),
-      createIcon("tailwind", "2rem"),
+      createIcon("react", "1.5rem"),
+      createIcon("redux", "1.5rem"),
+      createIcon("tailwind", "1.5rem"),
+      createIcon("node", "1.5rem"),
+      createIcon("express", "1.5rem"),
+      createIcon("mongoDB", "1.5rem"),
     ],
     gallery: [
-    "/public/audiophile-1.png",
-    // "/public/audiophile-2.png",
-    // "/public/audiophile-3.png",
-    // "/public/audiophile-4.png",
-    // "/public/audiophile-5.png",
-    // "/public/audiophile-6.png",
-  ],
-    livePath: "live preview link",
-    githubPath: "github coe repo",
+      "/audiophile-1.png",
+      "/audiophile-2.png",
+      "/audiophile-3.png",
+      "/audiophile-4.png",
+      "/audiophile-5.png",
+      "/audiophile-6.png",
+    ],
+    livePath: "https://radiant-marigold-3c2557.netlify.app/",
+    githubPath: "https://github.com/AshrafElshaer/e-commerce-client",
+  },
+  {
+    name: "Invoce App",
+    subTitle: "Invoicing web app ",
+    techStack: [
+      createIcon("react", "1.5rem"),
+      createIcon("redux", "1.5rem"),
+      createIcon("firebase", "1.5rem"),
+    ],
+    gallery: [
+      "/invoice-1.png",
+      "/invoice-2.png",
+      "/invoice-3.png",
+      "/invoice-4.png",
+      "/invoice-5.png",
+    ],
+    livePath: "https://curious-meringue-78ffd1.netlify.app/",
+    githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
+  },
+  {
+    name: "Invoce App",
+    subTitle: "Invoicing web app ",
+    techStack: [
+      createIcon("react", "1.5rem"),
+      createIcon("redux", "1.5rem"),
+      createIcon("firebase", "1.5rem"),
+    ],
+    gallery: [
+      "/audiophile-1.png",
+      // "/public/audiophile-2.png",
+      // "/public/audiophile-3.png",
+      // "/public/audiophile-4.png",
+      // "/public/audiophile-5.png",
+      // "/public/audiophile-6.png",
+    ],
+    livePath: "https://curious-meringue-78ffd1.netlify.app/",
+    githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
   },
 ];

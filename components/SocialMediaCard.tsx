@@ -18,7 +18,7 @@ const SocialMediaCard = ({
 }: Props) => {
   return (
     <Card
-      styles={`px-0 py-0 ${styles}`}
+      styles={`px-0 py-0 text-white ${styles}`}
       backGround={backGround}
       {...motionProps}>
       <Link

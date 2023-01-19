@@ -10,12 +10,13 @@ module.exports = {
       xsm: "375px",
       sm: "540px",
       md: "768px",
-      lg: "1024px",
+      lg: "1070px",
       xl: "1280px",
       "2xl": "1536px",
     },
     extend: {
       gridTemplateRows: {
+        fit: "repeat(auto-fit, minmax(100px ,1fr))",
         homeMobile: "325px repeat(3, minmax(100px ,1fr))",
         homeTablet: "repeat(3, 285px)",
         homeDesktop: "250px 361px",
