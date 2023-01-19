@@ -19,7 +19,7 @@ const Map = () => {
 
   return (
     <ReactMapGl
-      mapboxAccessToken="pk.eyJ1IjoiYWVsc2hhZXIiLCJhIjoiY2xkMnVhcTZiMGMxMjNvb3p1bjVlZjVlNiJ9.IFa8XlQ4ObyJguNPOnx4sg"
+      mapboxAccessToken="pk.eyJ1IjoiYWVsc2hhZXIiLCJhIjoiY2xkMnV5eDU3MDY3NTNvcWplbXo1Nnl4YyJ9.90jCx3PdKSqobIH-Wo5qZw"
       initialViewState={{
         longitude: -96.615021,
         latitude: 33.19796,
