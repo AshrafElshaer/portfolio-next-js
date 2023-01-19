@@ -114,11 +114,18 @@ export const socialMediaLinks = {
 
 export const projects = [
   {
+    id: 1,
     name: "AudioPhile",
     subTitle: "E-commerce ",
+    description: [
+      "View the optimal layout for the app depending on their device's screen size",
+      "Create & update User & Orders",
+      "Adding , udpadting & Deleting products from cart",
+      "Product description . features & gallery",
+    ],
     techStack: [
+      createIcon("typescript", "1.5rem"),
       createIcon("react", "1.5rem"),
-      createIcon("redux", "1.5rem"),
       createIcon("tailwind", "1.5rem"),
       createIcon("node", "1.5rem"),
       createIcon("express", "1.5rem"),
@@ -136,8 +143,15 @@ export const projects = [
     githubPath: "https://github.com/AshrafElshaer/e-commerce-client",
   },
   {
+    id: 2,
     name: "Invoce App",
     subTitle: "Invoicing web app ",
+    description: [
+      "Create, read, update, and delete invoices",
+      "Save draft invoices, and mark pending invoices as paid",
+      "Filter invoices by status (draft/pending/paid)",
+      "Full authantication through firebase authantication",
+    ],
     techStack: [
       createIcon("react", "1.5rem"),
       createIcon("redux", "1.5rem"),
@@ -154,6 +168,7 @@ export const projects = [
     githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
   },
   {
+    id: 3,
     name: "Invoce App",
     subTitle: "Invoicing web app ",
     techStack: [

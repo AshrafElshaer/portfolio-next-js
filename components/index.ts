@@ -9,3 +9,4 @@ export { default as TechPreview } from "./TechPreview";
 export { default as SocialMediaCard } from "./SocialMediaCard";
 export { default as PageTransition } from "./PageTransition";
 export { default as ProjectPreview } from "./ProjectPreview";
+export { default as Carousel } from "./Carousel";

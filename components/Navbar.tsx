@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link
             href='/projects'
             className={` py-2 px-6 rounded-full transition-all duration-200 ${
-              route === "/projects" ? " bg-gray-light dark:bg-darkBg" : ""
+              route.includes("/projects") ? " bg-gray-light dark:bg-darkBg" : ""
             }`}>
             Projects
           </Link>
