@@ -42,7 +42,7 @@ function ProjectPreview({ project }: Props) {
             key={idx}
             src={img}
             alt={name}
-            className={`imgPreview rounded-xl absolute top-0 left-0  ${
+            className={`imgPreview rounded-xl absolute top-0 left-0 transition-transform duration-300  ${
               idx !== currentIdx ? "translate-x-full" : ""
             } `}
             width={0}
