@@ -28,10 +28,7 @@ function ProjectDetails({ project }: Props) {
       />
       <Main styles='flex flex-col gap-8'>
         <motion.div variants={cardVariant}>
-          <Link href='/projects' className=' flex items-center gap-4'>
-            <FaLessThan size='1rem' />
-            Back
-          </Link>
+          <Link href='/projects'>Back</Link>
         </motion.div>
         <Card styles='text-center ' variants={cardVariant}>
           <h2 className='text-3xl text-gradient mb-2'>{project?.name}</h2>

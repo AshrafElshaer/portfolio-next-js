@@ -14,7 +14,6 @@ const Map = () => {
         ? "mapbox://styles/mapbox/dark-v11"
         : "mapbox://styles/mapbox/light-v11"
     );
-    
   }, [isDarkMode]);
 
   return (
