@@ -26,9 +26,8 @@ function ProjectPreview({ project, ...motionProps }: Props) {
     <Card styles='max-w-md min-w-[22rem]  mx-auto md:mx-0' {...motionProps}>
       {/* HEADER */}
       <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-between'>
-        <div>
-          <h2 className='text-xl'>{name}</h2>
-        </div>
+        <h2 className='text-xl'>{name}</h2>
+
         <div className='flex gap-2'>
           {techStack.map((tech, idx) => (
             <div key={idx}>{tech}</div>
