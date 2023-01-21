@@ -116,7 +116,7 @@ export const projects = [
   {
     id: 1,
     name: "AudioPhile",
-    subTitle: "E-commerce ",
+    subTitle: "Audio Supplies E-commerce ",
     description: [
       "View the optimal layout for the app depending on their device's screen size",
       "Create & update User & Orders",
@@ -144,7 +144,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Invoce App",
+    name: "Invoice App",
     subTitle: "Invoicing web app ",
     description: [
       "Create, read, update, and delete invoices",
