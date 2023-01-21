@@ -28,7 +28,6 @@ function ProjectPreview({ project, ...motionProps }: Props) {
       <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-between'>
         <div>
           <h2 className='text-xl'>{name}</h2>
-          <p>{subTitle}</p>
         </div>
         <div className='flex gap-2'>
           {techStack.map((tech, idx) => (
