@@ -6,6 +6,7 @@ import {
   SiExpress,
   SiRedux,
   SiFirebase,
+  SiNextdotjs,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import {
@@ -22,6 +23,9 @@ function createIcon(icon: string, size: string): ReactNode {
       break;
     case "react":
       return <FaReact color='#61dbfb' size={size} />;
+      break;
+    case "next":
+      return <SiNextdotjs size={size} />;
       break;
     case "redux":
       return <SiRedux color='#764abc' size={size} />;
@@ -70,6 +74,10 @@ export const technologies = [
     name: "React Js",
   },
   {
+    icon: createIcon("next", "2rem"),
+    name: "Next Js",
+  },
+  {
     icon: createIcon("redux", "2rem"),
     name: "Redux",
   },
@@ -86,15 +94,7 @@ export const technologies = [
     name: "Express Js ",
     color: "text-theme-light dark:text-theme-dark",
   },
-  {
-    icon: createIcon("mongoDB", "2rem"),
-    name: "MongoDB ",
-  },
-  {
-    icon: createIcon("github", "2rem"),
-    name: "GitHub ",
-    color: "text-theme-light dark:text-theme-dark",
-  },
+
 ];
 
 export const socialMediaLinks = {
