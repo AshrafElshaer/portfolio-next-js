@@ -52,9 +52,9 @@ const Navbar = () => {
             Projects
           </Link>
         </motion.li>
-        
       </motion.ul>
       <Button
+        styles='pt-[7.5px]'
         buttonType='primary'
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}

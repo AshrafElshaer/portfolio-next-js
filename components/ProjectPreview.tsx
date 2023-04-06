@@ -26,7 +26,9 @@ function ProjectPreview({ project, ...motionProps }: Props) {
     <Card styles='max-w-md min-w-[22rem]  mx-auto md:mx-0' {...motionProps}>
       {/* HEADER */}
       <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-between'>
+        
         <h2 className='text-xl'>{name}</h2>
+        
 
         <div className='flex gap-2'>
           {techStack.map((tech, idx) => (
@@ -34,6 +36,7 @@ function ProjectPreview({ project, ...motionProps }: Props) {
           ))}
         </div>
       </div>
+      <p className="mt-4">{subTitle}</p>
       {/* GALLERY */}
       <div className='rounded-lg h-44 my-6'>
         <Carousel gallery={gallery} name={name} />

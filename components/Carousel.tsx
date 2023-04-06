@@ -11,10 +11,10 @@ function Carousel({ gallery, name }: Props) {
   const [currentIdx, setCurrentIdx] = useState<number>(0);
 
   function handlePrevious() {
-    setCurrentIdx((curr) => (curr === 0 ? gallery.length - 1 : curr - 1));
+    setCurrentIdx((curr) => (curr === 0 ? curr : curr - 1));
   }
   function handleNext() {
-    setCurrentIdx((curr) => (curr !== gallery.length - 1 ? curr + 1 : 0));
+    setCurrentIdx((curr) => (curr !== gallery.length - 1 ? curr + 1 : curr));
   }
   return (
     <div className='w-full h-full relative flex overflow-hidden'>

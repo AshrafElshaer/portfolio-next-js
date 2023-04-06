@@ -94,7 +94,6 @@ export const technologies = [
     name: "Express Js ",
     color: "text-theme-light dark:text-theme-dark",
   },
-
 ];
 
 export const socialMediaLinks = {
@@ -116,12 +115,12 @@ export const projects = [
   {
     id: 1,
     name: "AudioPhile",
-    subTitle: "Audio Supplies E-commerce ",
+    subTitle: "Audio Hardware Supplies E-commerce ",
     description: [
       "View the optimal layout for the app depending on their device's screen size",
-      "Create & update User & Orders",
-      "Adding , udpadting & Deleting products from cart",
-      "Product description . features & gallery",
+      "Create , Update user preferences & rders",
+      "Adding , Upadting & Deleting products from cart",
+      "Product description, features & gallery",
     ],
     techStack: [
       createIcon("typescript", "1.5rem"),
@@ -144,7 +143,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Invoice App",
+    name: "Invoice X",
     subTitle: "Invoicing web app ",
     description: [
       "Create, read, update, and delete invoices",
@@ -167,5 +166,4 @@ export const projects = [
     livePath: "https://curious-meringue-78ffd1.netlify.app/",
     githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
   },
-
 ];

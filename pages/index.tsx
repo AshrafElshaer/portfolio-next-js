@@ -1,5 +1,4 @@
 import "mapbox-gl/dist/mapbox-gl.css";
-import Head from "next/head";
 import Link from "next/link";
 import { socialMediaLinks, technologies } from "../constans";
 import {
@@ -49,13 +48,12 @@ export default function Home() {
           </div>
         </Card>
         <Card styles='py-0 px-0' variants={cardVariant}>
-          <Map />
-       
+          {/* <Map /> */}
         </Card>
         <Card
           styles='md:row-span-2 lg:row-span-1 lg:col-start-2 lg:col-end-4'
           variants={cardVariant}>
-          <h2 className='text-center text-2xl'>Techs & Languages</h2>
+          <h2 className='text-center text-2xl'>Technologies</h2>
           <div className='grid grid-cols-3 gap-8 my-6 lg:flex lg:flex-wrap lg:items-center  '>
             {technologies.map((tech) => (
               <TechPreview key={tech.name} tech={tech} />
