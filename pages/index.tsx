@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </Card>
         <Card styles='py-0 px-0' variants={cardVariant}>
-          {/* <Map /> */}
+           <Map /> 
         </Card>
         <Card
           styles='md:row-span-2 lg:row-span-1 lg:col-start-2 lg:col-end-4'
