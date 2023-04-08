@@ -59,7 +59,7 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}>
-        <a href='mailto:ashrafelshaer98@icloud.com'>Contact</a>
+        <a href='mailto:ashrafelshaer98@icloud.com'>Let's Talk !</a>
       </Button>
     </nav>
   );
