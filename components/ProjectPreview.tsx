@@ -25,7 +25,7 @@ function ProjectPreview({ project, ...motionProps }: Props) {
   return (
     <Card styles='max-w-md min-w-[22rem]  mx-auto md:mx-0' {...motionProps}>
       {/* HEADER */}
-      <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-between'>
+      <div className='  flex flex-col items-center gap-4 sm:flex-row sm:justify-between'>
         
         <h2 className='text-xl'>{name}</h2>
         
@@ -36,7 +36,7 @@ function ProjectPreview({ project, ...motionProps }: Props) {
           ))}
         </div>
       </div>
-      <p className="mt-4">{subTitle}</p>
+      <p className="mt-4 text-center">{subTitle}</p>
       {/* GALLERY */}
       <div className='rounded-lg h-44 my-6'>
         <Carousel gallery={gallery} name={name} />
