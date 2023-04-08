@@ -36,10 +36,11 @@ export default function Home() {
           variants={cardVariant}
           styles='text-left md:text-center flex flex-col gap-4 md:col-start-1 md:col-end-3 '>
           <h1 className=' text-4xl text-gradient '>Ashraf Elshaer</h1>
-          <p> Self-taught front-end developer in The United States</p>
-          <p>
-            Hey! I'm Ash, and my goal is to work at a company where I can
-            deliver business value while leveling up my skills as a developer.
+          <p className='leading-6'>
+            Experienced Front End Developer with React and Next.js skills,
+            creating elegant and responsive user interfaces. A proactive problem
+            solver. I thrive in fast- paced environments, delivering scalable
+            and high-performance applications on time and within budget.
           </p>
           <div className='flex justify-center items-center mt-auto'>
             <Button buttonType='primary'>
