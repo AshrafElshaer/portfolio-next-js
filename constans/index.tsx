@@ -115,7 +115,7 @@ export const projects = [
   {
     id: 1,
     name: "AudioPhile",
-    subTitle: "Audio Hardware Supplies E-commerce ",
+    subTitle: "Audio Hardware E-commerce ",
     description: [
       "View the optimal layout for the app depending on their device's screen size",
       "Create , Update user preferences & rders",
