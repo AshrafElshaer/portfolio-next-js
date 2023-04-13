@@ -40,7 +40,7 @@ export default function Home() {
             Experienced Front End Developer with React and Next.js skills,
             creating elegant and responsive user interfaces. A proactive problem
             solver. I thrive in fast- paced environments, delivering scalable
-            and high-performance applications on time and within budget.
+            and high-performance applications.
           </p>
           <div className='flex justify-center items-center mt-auto'>
             <Button buttonType='primary'>
