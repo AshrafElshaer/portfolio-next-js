@@ -7,6 +7,9 @@ import {
   SiRedux,
   SiFirebase,
   SiNextdotjs,
+  SiPrisma,
+  SiTrpc,
+  SiSupabase,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import {
@@ -16,52 +19,77 @@ import {
 } from "react-icons/ai";
 import { ReactNode } from "react";
 
-function createIcon(icon: string, size: string): ReactNode {
+type IconName =
+  | "typescript"
+  | "react"
+  | "next"
+  | "redux"
+  | "tailwind"
+  | "node"
+  | "express"
+  | "mongoDB"
+  | "github"
+  | "firebase"
+  | "linkedIn"
+  | "instagram"
+  | "prisma"
+  | "trpc"
+  | "supabase";
+
+function createIcon(icon: IconName, size: string): JSX.Element {
   switch (icon) {
     case "typescript":
-      return <SiTypescript size={size} color='#007acc' />;
+      return <SiTypescript size={size} color="#007acc" />;
       break;
     case "react":
-      return <FaReact color='#61dbfb' size={size} />;
+      return <FaReact color="#61dbfb" size={size} />;
       break;
     case "next":
       return <SiNextdotjs size={size} />;
       break;
     case "redux":
-      return <SiRedux color='#764abc' size={size} />;
+      return <SiRedux color="#764abc" size={size} />;
       break;
     case "tailwind":
-      return <SiTailwindcss color='#3b82f6' size={size} />;
+      return <SiTailwindcss color="#3b82f6" size={size} />;
       break;
     case "node":
-      return <SiNodedotjs color='#68A063' size={size} />;
+      return <SiNodedotjs color="#68A063" size={size} />;
       break;
     case "express":
       return <SiExpress size={size} />;
       break;
     case "mongoDB":
-      return <SiMongodb color='#3FA037' size={size} />;
+      return <SiMongodb color="#3FA037" size={size} />;
       break;
     case "github":
       return <AiFillGithub size={size} />;
       break;
     case "firebase":
-      return <SiFirebase color='#FFA611' size={size} />;
+      return <SiFirebase color="#FFA611" size={size} />;
       break;
     case "linkedIn":
-      return <AiFillLinkedin color='white' size={size} />;
+      return <AiFillLinkedin color="white" size={size} />;
       break;
     case "instagram":
-      return <AiOutlineInstagram color='white' size={size} />;
+      return <AiOutlineInstagram color="white" size={size} />;
+      break;
+    case "trpc":
+      return <SiTrpc color="#0ea5e9" size={size} />;
+      break;
+    case "prisma":
+      return <SiPrisma  size={size} />;
+      break;
+    case "supabase":
+      return <SiSupabase color="#059669" size={size} />;
       break;
 
-    default:
-      return;
+  
   }
 }
 
 const React = (size: string): ReactNode => (
-  <FaReact color='#61dbfb' size={size} />
+  <FaReact color="#61dbfb" size={size} />
 );
 
 export const technologies = [
@@ -165,5 +193,26 @@ export const projects = [
     ],
     livePath: "https://curious-meringue-78ffd1.netlify.app/",
     githubPath: "https://github.com/AshrafElshaer/invoice-app-redux",
+  },
+  {
+    id: 3,
+    name: "Chat & Chill",
+    subTitle: "Live Web Chat Application ",
+    description: [
+      "A live chat web app that allows users to chat with each other in real-time",
+      "Full authantication through Next-Auth authantication",
+      "Users can send images or files in the chat",
+      "Users can see who is online",
+      "User can add or delete a chat room or friend",
+    ],
+    techStack: [
+      createIcon("next", "1.5rem"),
+      createIcon("trpc", "1.5rem"),
+      createIcon("prisma", "1.5rem"),
+      createIcon("supabase", "1.5rem"),
+    ],
+    gallery: ["/chat-1.png", "/chat-2.png", "/chat-3.png"],
+    livePath: "https://chat-and-chill.vercel.app/",
+    githubPath: "https://github.com/AshrafElshaer/chat-and-chill",
   },
 ];

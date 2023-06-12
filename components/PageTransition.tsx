@@ -20,15 +20,15 @@ const container = {
 const PageTransition = ({ children }: Props) => {
   const { asPath } = useRouter();
   return (
-    <AnimatePresence mode='wait'>
-      <motion.div
+    <AnimatePresence mode='popLayout'>
+      <motion.main
         variants={container}
         animate='in'
         exit='out'
         key={asPath}
         style={{ transformOrigin: "center" }}>
         {children}
-      </motion.div>
+      </motion.main>
     </AnimatePresence>
   );
 };
